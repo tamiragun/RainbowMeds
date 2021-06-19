@@ -2,69 +2,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-/*
-.b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.form-control-dark {
-  color: #fff;
-  background-color: var(--bs-dark);
-  border-color: var(--bs-gray);
-}
-.form-control-dark:focus {
-  color: #fff;
-  background-color: var(--bs-dark);
-  border-color: #fff;
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: currentColor;
-}
-
-.text-small {
-  font-size: 85%;
-}
-
-.dropdown-toggle {
-  outline: 0;
-}
-*/
-
-
-.h2 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 46px;
-  text-align: center;
-}
-
 .card-title {
-  font-family: Poppins;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  /*color: #120039;*/
-}
-
-.card-text {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
   /*color: #120039;*/
 }
 
@@ -74,22 +14,13 @@
 }
 
 .whatsapp-cta {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
-  text-align: center;
   color: #4fd8de;
   padding: 15px 0px;
 }
 
 .footer-text {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
   color: #235ee8;
   padding: 0px 20px;
 }
