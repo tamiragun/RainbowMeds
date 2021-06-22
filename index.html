@@ -20,53 +20,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+  <!--Sticky nav bar with logo, anchor links, and CTA button-->
 
-  <!--Header with logo, links and CTA button-->
-  <div class="sticky-top">
-    <div class="container">
-      <header
+  <nav class="navbar sticky-top">
+    <div class="
+      d-flex
+      flex-wrap
+      align-items-center
+      justify-content-center 
+      justify-content-md-between
+      py-3
+      mb-1 
+      container">
+      <a
+        href="/"
         class="
           d-flex
-          flex-wrap
           align-items-center
-          justify-content-center justify-content-md-between
-          py-3
-          mb-1 
+          col-md-3
+          mb-2 mb-md-0
+          text-dark 
+          text-decoration-none
         "
       >
-        <a
-          href="/"
-          class="
-            d-flex
-            align-items-center
-            col-md-3
-            mb-2 mb-md-0
-            text-dark text-decoration-none
-          "
-        >
-          <img src="./images/logo.svg" alt="RainbowMeds logo">
-        </a>
+        <img src="./images/logo.svg" alt="RainbowMeds logo">
+      </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#about" class="nav-link px-4 link-dark">About</a></li>
-          <li>
-            <a href="#how-it-works" class="nav-link px-4 link-dark"
-              >How it works</a
-            >
-          </li>
-        </ul>
-
-        <div class="col-md-3 text-end d-none d-md-inline">
-          <a
-            class="btn btn-outline-primary"
-            href="https://wa.me/14155238886"
-            role="button"
-            >Search meds</a
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#about" class="nav-link px-4 link-dark">About</a></li>
+        <li>
+          <a href="#how-it-works" class="nav-link px-4 link-dark"
+            >How it works</a
           >
-        </div>
-      </header>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end d-none d-md-inline">
+        <a
+          class="btn btn-outline-primary"
+          href="https://wa.me/14155238886"
+          role="button"
+          >Search meds</a
+        >
+      </div>
     </div>
-  </div>
+  </nav>
 
   <body>
 
@@ -95,11 +93,11 @@
 
     <!--About section explaining the basic concept-->
 
-    <section id="about" class="py-5 text-center container">
-      <div class="container">
+    <section id="about">
+      <div class="container py-5 text-center ">
         <div class="row">
           <div class="col-sm-6 col-md-8 mx-auto">
-            <h2 class="text-center fw-bold py-4" id="about">About</h2>
+            <h2 class="text-center fw-bold py-4">About</h2>
             <p>
               Have you ever wondered what the right dosage is of the medicine
               you're taking, or what its side effects are? The meds come with
@@ -117,103 +115,10 @@
             </p>
           </div>
         </div>
-      </div>
-
-      <div col-lg-4 col-md-6 mx-auto>
-        <a
-          class="btn btn-primary btn-lg mt-5"
-          href="https://wa.me/14155238886"
-          role="button"
-        >
-          Search meds
-        </a>
-        <p class="whatsapp-cta">Click to open WhatsApp.</p>
-      </div>
-<!--
-      <div class="container pt-4">
-        <div class="row">
-          <div class="col-sm-3 mx-auto">
-            <ul class="list-group">
-              <li class="list-group-item bg-warning">Supported languages:</li>
-              <li class="list-group-item">English</li>
-              <li class="list-group-item">isiZulu</li>
-              <li class="list-group-item bg-warning">Coming soon:</li>
-              <li class="list-group-item">isiXhosa</li>
-              <li class="list-group-item">Sesotho</li>
-              <li class="list-group-item">Afrikaans</li>
-            </ul>
-          </div>
-        </div>
-      </div>
--->
-
-    </section>
-
-<!--How it works section explaining the steps to the user-->
-
-    <section id = "how-it-works">
-      <div class="py-5 text-center container">
-        <div col-lg-4 col-md-6 mx-auto>
-          <h2 class="text-center fw-bold py-4" id="how-it-works-title">How it works</h2>
-          <p class="mb-5">
-            Use our bot to learn everything you need to know about your medicine,
-            straight from WhatsApp.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-sm">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Go to WhatsApp</h5>
-                <p class="card-text">
-                  Start the conversation by sending the word "Hi" to <a href="https://wa.me/14155238886" class="fw-bold link-primary">RainbowMeds</a>.
-                </p>
-                <img
-                  src="./images/Image_1x2.png"
-                  class="card-img-bottom"
-                  alt="WhatsApp bot saying hi"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Choose your language</h5>
-                <p class="card-text">
-                  Choose between isiZulu and English - more options coming soon!
-                </p>
-                <img
-                  src="./images/Image_2x2.png"
-                  class="card-img-bottom"
-                  alt="WhatsApp bot choosing language"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Get info on your meds</h5>
-                <p class="card-text">
-                  Look up the pharmaceutical name to learn more about your medicine.
-                </p>
-                <img
-                  src="./images/Image_3x2.png"
-                  class="card-img-bottom"
-                  alt="WhatsApp bot asking which meds"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div col-lg-4 col-md-6 mx-auto>
           <a
-            class="btn btn-primary btn-lg mt-5"
+            class="btn btn-primary btn-lg"
             href="https://wa.me/14155238886"
             role="button"
           >
@@ -222,9 +127,87 @@
           <p class="whatsapp-cta">Click to open WhatsApp.</p>
         </div>
       </div>
+
     </section>
 
-<!--Footer section with links-->
+    <!--How it works section explaining the steps to the user-->
+
+    <section id="how-it-works">
+      <div id = "how-it-works-background">
+        <div class="py-5 text-center container">
+          <div col-lg-4 col-md-6 mx-auto>
+            <h2 class="text-center fw-bold py-4">How it works</h2>
+            <p class="mb-5">
+              Use our bot to learn everything you need to know about your medicine,
+              straight from WhatsApp.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Go to WhatsApp</h5>
+                  <p class="card-text">
+                    Start the conversation by sending the word "Hi" to <a href="https://wa.me/14155238886" class="fw-bold link-primary">RainbowMeds</a>.
+                  </p>
+                  <img
+                    src="./images/Image_1x2.png"
+                    class="card-img-bottom"
+                    alt="WhatsApp bot saying hi"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Choose your language</h5>
+                  <p class="card-text">
+                    Choose between isiZulu and English - more options coming soon!
+                  </p>
+                  <img
+                    src="./images/Image_2x2.png"
+                    class="card-img-bottom"
+                    alt="WhatsApp bot choosing language"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Get info on your meds</h5>
+                  <p class="card-text">
+                    Look up the pharmaceutical name to learn more about your medicine.
+                  </p>
+                  <img
+                    src="./images/Image_3x2.png"
+                    class="card-img-bottom"
+                    alt="WhatsApp bot asking which meds"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div col-lg-4 col-md-6 mx-auto>
+            <a
+              class="btn btn-primary btn-lg mt-5"
+              href="https://wa.me/14155238886"
+              role="button"
+            >
+              Search meds
+            </a>
+            <p class="whatsapp-cta">Click to open WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Footer section with links-->
 
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container text-center">
@@ -233,5 +216,6 @@
         <span class="footer-text"><a href="#about">ABOUT</a></span>
       </div>
     </footer>
+
   </body>
 </html>
