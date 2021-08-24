@@ -22,6 +22,8 @@ At that point, the Botlhale chatbot takes over and responds, engaging in an AI-p
 
 The data vending service calls the USA’s [Federal Drug Administration's medicines API](https://open.fda.gov/apis/), and then runs the returned result through [Google’s Translation API](https://cloud.google.com/translate). Finally, the data layer server returns the data in the desired language back to the bot platform, which then passes it to the orchestration server which, via Twilio, sends it to the user.
 
+![rainbowmeds architecture](https://miro.medium.com/max/700/0*vfDudZTefUq4dcUo "RainbowMeds architecture")
+
 ## Issues
 
 Our Minimum Viable Product (MVP) only handles the Zulu and English languages, a couple of popular medicines such as Panado (paracetamol), and a couple of the available rubrics (dosage and side effects). Rather than build a front-end app, we deployed the bot to WhatsApp, which could be launched from a static landing page. The idea was for our MVP to prove that this can be built, rather than to build a complete offering. 
